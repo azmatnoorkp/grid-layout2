@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .container{
+    width: 1527px;
     display: grid;
     grid-template-rows: repeat(3,190px);
     grid-template-columns: repeat(3,300px);
@@ -22,6 +23,28 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3641D6", en
 
 }
 
+@media(max-width:900px){
+    .container{
+        height: 2400px;
+        width: 1000px;
+        display: grid;
+        grid-template-rows: repeat(5,190px);
+        grid-template-columns: repeat(2,300px);
+        justify-content: center;
+    }
+
+}
+@media(max-width:500px){
+    .container{
+        height: 2400px;
+        width: 1000px;
+        display: grid;
+        grid-template-rows: repeat(9,190px);
+        grid-template-columns: repeat(1,300px);
+        justify-content: center;
+    }
+
+}
 .children{
     background-color: #ffffff;
     border: 1px solid #ffffff;
